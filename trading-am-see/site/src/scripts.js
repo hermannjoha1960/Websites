@@ -316,9 +316,16 @@
   if (sticky) {
     var hideZones = $$('#anmeldung, .t-footer');
     var zoneVisible = false;
-    var updateSticky = function () {
-      sticky.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.75 && !zoneVisible);
+    // the platform cookie banner takes the same spot until it is answered (it is parsed after this script)
+    var bannerOpen = function () {
+      var b = document.getElementById('cc-banner');
+      return !!b && b.style.display !== 'none' && b.offsetHeight > 0;
     };
+    var updateSticky = function () {
+      sticky.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.75 && !zoneVisible && !bannerOpen());
+    };
+    // fired just before the banner hides itself
+    document.addEventListener('cookieConsentUpdate', function () { setTimeout(updateSticky, 0); });
     if ('IntersectionObserver' in window && hideZones.length) {
       var seen = new Map();
       var zio = new IntersectionObserver(function (entries) {
@@ -331,6 +338,20 @@
     onScroll(updateSticky);
     updateSticky();
   }
+
+  /* ---------- platform cookie banner: the labels it leaves in Italian/English ---------- */
+  var localizeBanner = function () {
+    var named = { 'cc-banner': 'Cookie-Einwilligung', 'cc-settings': 'Cookie-Einstellungen' };
+    Object.keys(named).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.setAttribute('aria-label', named[id]);
+    });
+    $$('.cc-panel-close').forEach(function (b) { b.setAttribute('aria-label', 'Schließen'); });
+    $$('.cc-toggle').forEach(function (t) { t.setAttribute('aria-label', 'Analyse-Cookies'); });
+    $$('.cc-desc a').forEach(function (a) { if (/privacy/i.test(a.textContent)) a.textContent = 'Datenschutzerklärung'; });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', localizeBanner);
+  else localizeBanner();
 
   /* ---------- registration form ---------- */
   var form = document.getElementById('contact-form');

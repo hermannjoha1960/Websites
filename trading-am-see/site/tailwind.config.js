@@ -3,6 +3,11 @@
  *  so only classes that appear in the sources below end up in it. */
 module.exports = {
   content: ['./pages/**/*.html', './blocks/**/*.html', './src/**/*.{html,js}'],
+  // the cookie banner markup is rendered by the platform, not by our sources
+  safelist: [
+    'cc-banner', 'cc-banner-inner', 'cc-title', 'cc-desc', 'cc-btn', 'cc-btn-primary',
+    'cc-btn-secondary', 'cc-btn-ghost', 'cc-panel', 'cc-panel-header', 'cc-panel-close',
+  ],
   corePlugins: { container: false },
   theme: {
     screens: { sm: '640px', md: '768px', lg: '1024px', xl: '1280px' },

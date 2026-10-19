@@ -352,6 +352,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    min-height: 44px;
     font-weight: 600;
     color: var(--gold-hi);
     text-decoration: none;
@@ -416,6 +417,7 @@
     display: inline-flex;
     align-items: center;
     gap: 11px;
+    min-height: 44px;
     color: #fff;
     text-decoration: none;
     flex: none;
@@ -517,7 +519,7 @@
     justify-content: center;
     padding: calc(var(--nav-h) + 24px) clamp(20px, 6vw, 48px) 32px;
     background: radial-gradient(900px 500px at 100% 100%, rgba(212, 162, 76, 0.16), transparent 60%),
-      linear-gradient(180deg, rgba(7, 11, 18, 0.98), rgba(11, 18, 32, 0.98));
+      linear-gradient(180deg, var(--ink), var(--night));
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s var(--ease), visibility 0.5s;
@@ -938,6 +940,12 @@
     color: rgba(255, 255, 255, 0.6);
   }
   .t-crumbs a {
+    display: inline-flex;
+    align-items: center;
+    /* 44px tap target without changing the line height */
+    min-width: 44px;
+    min-height: 44px;
+    margin-block: -13px;
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
   }
@@ -1139,7 +1147,7 @@
     background: rgba(7, 11, 18, 0.62);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.9);
@@ -1759,7 +1767,7 @@
   }
   .t-label,
   .t-legend {
-    font-size: 0.74rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -2064,10 +2072,13 @@
   }
   .t-footer__links {
     display: grid;
-    gap: 10px;
+    gap: 0;
   }
   .t-footer__links a,
   .t-footer__links button {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
     color: rgba(237, 239, 242, 0.82);
     text-decoration: none;
     text-align: left;
@@ -2081,6 +2092,71 @@
   .t-footer__links a:hover,
   .t-footer__links button:hover {
     color: var(--gold-hi);
+  }
+
+  /* ---------- cookie banner (rendered by the platform, themed via its variables) ---------- */
+  :root {
+    --cc-bg: rgba(7, 11, 18, 0.96);
+    --cc-text: var(--text);
+    --cc-link: var(--gold-hi);
+    --cc-btn-primary-bg: linear-gradient(135deg, var(--gold-hi), var(--gold) 55%, var(--gold-deep));
+    --cc-btn-primary-text: #17110a;
+    --cc-btn-secondary-bg: rgba(255, 255, 255, 0.07);
+    --cc-btn-secondary-text: #fff;
+    --cc-panel-bg: var(--night);
+    --cc-active-color: var(--gold-hi);
+  }
+  body .cc-banner {
+    padding: 18px clamp(16px, 4vw, 40px) calc(18px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--line-strong);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 -24px 60px -20px rgba(0, 0, 0, 0.7);
+  }
+  body .cc-banner-inner {
+    max-width: 1160px;
+    gap: 14px 32px;
+  }
+  body .cc-title {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  body .cc-desc {
+    font-size: 0.86rem;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  body .cc-btn {
+    min-height: 44px;
+    padding: 0.6rem 1.3rem;
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+  }
+  body .cc-btn-primary {
+    box-shadow: 0 10px 30px -12px rgba(212, 162, 76, 0.7);
+  }
+  body .cc-btn-secondary {
+    border: 1px solid var(--line-strong);
+  }
+  body .cc-btn-ghost {
+    color: rgba(237, 239, 242, 0.8);
+    text-underline-offset: 3px;
+  }
+  body .cc-panel {
+    border: 1px solid var(--line);
+    border-radius: 22px;
+  }
+  body .cc-panel-header h3 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  body .cc-panel-close {
+    min-width: 44px;
+    min-height: 44px;
   }
 
   /* ---------- sticky mobile cta ---------- */
@@ -2133,11 +2209,14 @@
     transition: opacity 1.1s var(--ease) var(--d, 0s), transform 1.1s var(--ease) var(--d, 0s),
       filter 1.1s var(--ease) var(--d, 0s);
   }
-  .js .rv-l {
-    transform: translate3d(-40px, 0, 0);
-  }
-  .js .rv-r {
-    transform: translate3d(40px, 0, 0);
+  /* sideways reveals only where the wrap padding absorbs the offset (no horizontal overflow on phones) */
+  @media (min-width: 1024px) {
+    .js .rv-l {
+      transform: translate3d(-40px, 0, 0);
+    }
+    .js .rv-r {
+      transform: translate3d(40px, 0, 0);
+    }
   }
   .js .rv-zoom {
     transform: scale(0.94);

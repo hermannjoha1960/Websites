@@ -4,6 +4,11 @@
 > într-o vilă privată pe malul lacului Krüpelsee (Zernsdorf, ~30 km de Berlin). 5.500 € / persoană, all-inclusive.
 > Organizator: Hermann Joha.
 
+**Status (19.10.2026): publicat pe https://trading-am-see.de** — 9 pagini (Start, Programm, Location,
+Veranstalter, FAQ, Anmeldung, Risikohinweis, Impressum, Datenschutz), formular de vormerkung → `kontakt@trading-am-see.de`,
+banner de cookies în germană (statistică doar cu consimțământ). Verificat live pe telefon/tabletă/desktop
+(`tools/verify-live.py`, `tools/check-live.mjs`). Lipsesc încă datele de la punctul 9.1 pentru Impressum/Datenschutz.
+
 ---
 
 ## 1. Obiectivul site-ului
@@ -134,7 +139,7 @@ Câmpuri (cu `*` obligatoriu):
 - **Impressum** (§ 5 DDG) obligatoriu: nume/firmă, adresă, contact, registru, TVA.
 - **Datenschutzerklärung** obligatorie pentru formular (cine e operatorul de date).
 - **Risikohinweis**: trading-ul implică riscuri mari; nu e consultanță de investiții; rezultatele din trecut nu garantează nimic. ✔ scris.
-- **Prețuri:** pentru persoane fizice prețul trebuie afișat **cu TVA inclus**. Trebuie confirmat dacă 5.500 € e brut sau net.
+- **Prețuri:** pentru persoane fizice prețul trebuie afișat **cu TVA inclus**. ✔ Confirmat: 5.500 € e preț final, cu TVA → pe site „inkl. MwSt.”.
 - Faza 3 (rezervare) va cere **AGB/Teilnahmebedingungen** (storno, plată, anulare de către organizator).
 - Nicio promisiune de câștig, fără „semnale”, fără „garantat”.
 
@@ -142,9 +147,9 @@ Câmpuri (cu `*` obligatoriu):
 
 ## 9. Ce am nevoie de la voi (întrebări deschise)
 
-1. **Firma care operează site-ul** (pentru Impressum + Datenschutz): Hermann Joha ca persoană/e.K.? Ausblicke Management GmbH? DC FINANZINVEST S.R.L.? Altă firmă? → nume, adresă, e-mail, telefon, nr. registru, TVA.
-2. **E-mailul** unde să vină înscrierile (ex. `info@trading-am-see.de`).
-3. **5.500 €** — cu TVA inclus? Cameră single sau dublă? Supliment pentru însoțitor?
+1. **Operatorul site-ului:** ✔ Hermann Joha (persoană / e.K.). **Încă lipsesc:** adresa (stradă, cod poștal, oraș), telefon, USt-IdNr. sau Steuernummer, iar dacă e e.K.: registrul comercial (Amtsgericht + HRA). Până atunci pe Impressum/Datenschutz scrie „Anschrift: wird ergänzt”.
+2. **E-mailul pentru înscrieri:** ✔ `kontakt@trading-am-see.de` (MX-ul domeniului e la IONOS — căsuța trebuie să existe acolo).
+3. **5.500 €:** ✔ preț final cu TVA. Deschis: cameră single sau dublă? Supliment pentru însoțitor?
 4. **Câți participanți** maxim pe retreat? (ex. 8, 12, 16)
 5. **Ce piețe** se tranzacționează live (futures pe indici, forex, acțiuni…)? Participanții pot tranzacționa și ei de pe propriul cont/demo?
 6. **Portret Hermann Joha** + poze reale cu setup-ul de trading (ecrane) — le punem imediat în locul pozelor-simbol.
