@@ -1,4 +1,5 @@
 node_modules/
-site/node_modules/
 preview/
+publish/
 shots/
+site/node_modules/

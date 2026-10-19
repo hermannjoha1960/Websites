@@ -4,12 +4,72 @@
     "url": "/",
     "isHomePage": true,
     "title": "Trading am See – Live-Trading-Retreat am See bei Berlin",
-    "metaDescription": "6 Nächte, 5 Tage Live-Trading mit Profis (10–30 Jahre Erfahrung) auf Echtgeld-Konten, Seminare & Vollpension in einer Seevilla 30 km vor Berlin. Jetzt vormerken.",
+    "metaDescription": "6 Nächte, 5 Tage Live-Trading mit Profis (10–30 Jahre Erfahrung) auf Echtgeld-Konten, Seminare & Vollpension in einer Seevilla bei Berlin. Jetzt vormerken.",
     "metaKeywords": "Trading Seminar, Trading Retreat, Live Trading, Trading Workshop Berlin, Trading Seminar am See, Daytrading lernen, Trading Coaching Brandenburg",
     "ogTitle": "Trading am See – Sechs Nächte am See. Fünf Tage live im Markt.",
     "ogDescription": "Live-Trading auf sechsstelligen Echtgeld-Konten, Seminare von Tradern mit 10–30 Jahren Erfahrung und eine private Seevilla am Krüpelsee bei Berlin. 5.500 € all-inclusive.",
     "ogImage": "/uploads/site-87/brand/og-trading-am-see.jpg",
-    "ogType": "website"
+    "ogType": "website",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://trading-am-see.de/#organization",
+          "name": "Trading am See",
+          "url": "https://trading-am-see.de/",
+          "logo": "https://trading-am-see.de/uploads/site-87/brand/logo-mark.svg",
+          "email": "kontakt@trading-am-see.de",
+          "founder": {
+            "@type": "Person",
+            "name": "Hermann Joha"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://trading-am-see.de/#website",
+          "url": "https://trading-am-see.de/",
+          "name": "Trading am See",
+          "inLanguage": "de",
+          "publisher": {
+            "@id": "https://trading-am-see.de/#organization"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Trading am See – Live-Trading-Retreat",
+          "description": "Sechs Nächte (Sonntag bis Samstag) in einer privaten Seevilla am Krüpelsee bei Berlin: fünf Tage Live-Trading auf sechsstelligen Echtgeld-Konten, tägliche Trade-Reviews und Seminare zu Strategien, Theorien und Setups von Tradern mit 10 bis 30 Jahren Markterfahrung. Vollpension inklusive.",
+          "inLanguage": "de",
+          "provider": {
+            "@id": "https://trading-am-see.de/#organization"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "Seevilla am Krüpelsee",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Zernsdorf (Königs Wusterhausen)",
+              "addressRegion": "Brandenburg",
+              "addressCountry": "DE"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 52.2667,
+              "longitude": 13.6333
+            }
+          },
+          "timeRequired": "P6D",
+          "offers": {
+            "@type": "Offer",
+            "price": "5500",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/PreOrder",
+            "url": "https://trading-am-see.de/anmeldung",
+            "category": "Retreat inkl. Unterkunft und Vollpension"
+          }
+        }
+      ]
+    }
   },
   {
     "file": "programm.html",
@@ -20,7 +80,38 @@
     "ogTitle": "Das Programm: 5 Tage Live-Trading & Seminare am See",
     "ogDescription": "Vormittags live im Markt, nachmittags Seminare zu Strategien, Theorien und Setups – die Woche bei Trading am See im Überblick.",
     "ogImage": "/uploads/site-87/symbolbild-live-trading-an-mehreren-bildschirmen-mit-blick-a.jpg",
-    "ogType": "article"
+    "ogType": "article",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Programm & Tagesablauf – Trading am See",
+          "url": "https://trading-am-see.de/programm",
+          "inLanguage": "de",
+          "isPartOf": {
+            "@id": "https://trading-am-see.de/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Programm",
+              "item": "https://trading-am-see.de/programm"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "file": "location.html",
@@ -31,7 +122,50 @@
     "ogTitle": "Die Seevilla am Krüpelsee – Location von Trading am See",
     "ogDescription": "Eigene Stege, Salzwasserpool, Sauna und Seeblick: Hier findet das Live-Trading-Retreat statt – 30 km vor Berlin.",
     "ogImage": "/uploads/site-87/fotos/luftbild-seevilla-stege.webp",
-    "ogType": "article"
+    "ogType": "article",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Die Seevilla am Krüpelsee – Location & Anreise",
+          "url": "https://trading-am-see.de/location",
+          "inLanguage": "de",
+          "about": {
+            "@type": "Place",
+            "name": "Seevilla am Krüpelsee",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Zernsdorf (Königs Wusterhausen)",
+              "addressRegion": "Brandenburg",
+              "addressCountry": "DE"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 52.2667,
+              "longitude": 13.6333
+            }
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Location",
+              "item": "https://trading-am-see.de/location"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "file": "veranstalter.html",
@@ -42,7 +176,46 @@
     "ogTitle": "Hermann Joha – Gastgeber von Trading am See",
     "ogDescription": "Erfahrung mit großen Produktionen und Trading-Seminaren: Wer hinter dem Live-Trading-Retreat am Krüpelsee steht.",
     "ogImage": "/uploads/site-87/fotos/hausboot-sonnenuntergang.webp",
-    "ogType": "article"
+    "ogType": "article",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "name": "Hermann Joha – Veranstalter von Trading am See",
+          "url": "https://trading-am-see.de/veranstalter",
+          "inLanguage": "de",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Hermann Joha",
+            "jobTitle": "Veranstalter und Gastgeber von Trading am See",
+            "award": "Deutscher Fernsehpreis 2012",
+            "knowsAbout": [
+              "Trading",
+              "Eventorganisation",
+              "Film- und Fernsehproduktion"
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Veranstalter",
+              "item": "https://trading-am-see.de/veranstalter"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "file": "faq.html",
@@ -53,7 +226,100 @@
     "ogTitle": "Trading am See – Häufige Fragen",
     "ogDescription": "Alles Wichtige zum Live-Trading-Retreat: Termine, Leistungen, Ablauf, Anreise und Anmeldung.",
     "ogImage": "/uploads/site-87/brand/og-trading-am-see.jpg",
-    "ogType": "article"
+    "ogType": "article",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "FAQPage",
+          "url": "https://trading-am-see.de/faq",
+          "inLanguage": "de",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Wann findet das erste Retreat statt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Die ersten Termine für 2027 sind in Planung. Wer sich jetzt unverbindlich vormerkt, erfährt die Termine zuerst – und kann im Formular angeben, welcher Zeitraum am besten passt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ist die Vormerkung verbindlich?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nein. Die Vormerkung ist kostenlos und unverbindlich. Eine Buchung erfolgt erst, wenn Termin, Line-up und Teilnahmebedingungen feststehen – und Sie sich bewusst dafür entscheiden."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wer sind die Trader?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Wir sind im Gespräch mit bekannten Tradern mit 10 bis 30 Jahren Markterfahrung. Das Line-up wird in Kürze veröffentlicht – Interessenten auf der Liste erfahren es zuerst. Gastgeber Hermann Joha tradet ebenfalls live."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wird wirklich mit echtem Geld gehandelt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Von unserer Seite wird auf Live-Konten im sechsstelligen Bereich gehandelt – keine Demo, keine Simulation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ist das ein Signal-Service oder eine Anlageberatung?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nein. Das Retreat ist eine Weiterbildung. Es gibt keine Kauf- oder Verkaufsempfehlungen und keine Gewinnversprechen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wo genau liegt die Location?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Am Krüpelsee in Zernsdorf (Königs Wusterhausen) im Dahme-Seenland, rund 30 km südöstlich von Berlin. Der Flughafen BER ist etwa 20–25 Minuten entfernt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was kostet das Retreat?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "5.500 € pro Person inkl. MwSt. für sechs Nächte – inklusive Unterkunft, Vollpension, fünf Tagen Live-Trading mit Trade-Reviews und fünf Seminar-Nachmittagen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wann muss ich bezahlen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Erst bei der verbindlichen Buchung, wenn Termin und Teilnahmebedingungen feststehen. Die Vormerkung selbst ist kostenlos."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "FAQ",
+              "item": "https://trading-am-see.de/faq"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "file": "anmeldung.html",
@@ -64,7 +330,35 @@
     "ogTitle": "Jetzt vormerken – Trading am See",
     "ogDescription": "Sechs Nächte am See, fünf Tage live im Markt. Unverbindlich vormerken und Termine zuerst erfahren.",
     "ogImage": "/uploads/site-87/brand/og-trading-am-see.jpg",
-    "ogType": "website"
+    "ogType": "website",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "name": "Platz vormerken – Trading am See",
+          "url": "https://trading-am-see.de/anmeldung",
+          "inLanguage": "de"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Anmeldung",
+              "item": "https://trading-am-see.de/anmeldung"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "file": "risikohinweis.html",
@@ -75,6 +369,112 @@
     "ogTitle": "Risikohinweis – Trading am See",
     "ogDescription": "Trading ist mit erheblichen Risiken verbunden. Bitte lesen Sie diese Hinweise sorgfältig.",
     "ogImage": "/uploads/site-87/brand/og-trading-am-see.jpg",
-    "ogType": "article"
+    "ogType": "article",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Risikohinweis – Trading am See",
+          "url": "https://trading-am-see.de/risikohinweis",
+          "inLanguage": "de"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Risikohinweis",
+              "item": "https://trading-am-see.de/risikohinweis"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "file": "impressum.html",
+    "url": "/impressum",
+    "title": "Impressum – Trading am See",
+    "metaDescription": "Impressum und Anbieterkennzeichnung von trading-am-see.de gemäß § 5 DDG.",
+    "metaKeywords": "Impressum Trading am See",
+    "ogTitle": "Impressum – Trading am See",
+    "ogDescription": "Anbieterkennzeichnung von trading-am-see.de.",
+    "ogImage": "/uploads/site-87/brand/og-trading-am-see.jpg",
+    "ogType": "website",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Impressum – Trading am See",
+          "url": "https://trading-am-see.de/impressum",
+          "inLanguage": "de"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Impressum",
+              "item": "https://trading-am-see.de/impressum"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "file": "datenschutz.html",
+    "url": "/datenschutz",
+    "title": "Datenschutzerklärung – Trading am See",
+    "metaDescription": "Wie trading-am-see.de personenbezogene Daten verarbeitet: Formular, Server-Logfiles, Einwilligungs-Banner, Statistik und Ihre Rechte nach DSGVO.",
+    "metaKeywords": "Datenschutz Trading am See, DSGVO",
+    "ogTitle": "Datenschutzerklärung – Trading am See",
+    "ogDescription": "Informationen zur Verarbeitung personenbezogener Daten auf trading-am-see.de.",
+    "ogImage": "/uploads/site-87/brand/og-trading-am-see.jpg",
+    "ogType": "website",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Datenschutzerklärung – Trading am See",
+          "url": "https://trading-am-see.de/datenschutz",
+          "inLanguage": "de"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://trading-am-see.de/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Datenschutz",
+              "item": "https://trading-am-see.de/datenschutz"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
