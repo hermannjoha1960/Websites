@@ -1,0 +1,119 @@
+<div class="t-form rv" data-no-lightbox>
+  <form id="contact-form">
+    <div class="flex items-center justify-between gap-4">
+      <p class="t-eyebrow">Unverbindlich vormerken</p>
+      <span class="t-badge"><span class="t-dot t-dot--bull"></span>Kostenlos</span>
+    </div>
+    <p class="mt-4 font-serif text-3xl leading-tight text-white md:text-4xl">Ihr Platz auf der Interessentenliste</p>
+    <p class="t-note mt-2">Dauert eine Minute. Pflichtfelder sind mit <span class="text-gold">*</span> markiert.</p>
+
+    <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div class="t-field md:col-span-2">
+        <label class="t-label" for="f-name">Vor- und Nachname <i>*</i></label>
+        <input class="t-input" id="f-name" name="name" type="text" autocomplete="name" required placeholder="Max Mustermann">
+      </div>
+      <div class="t-field">
+        <label class="t-label" for="f-email">E-Mail <i>*</i></label>
+        <input class="t-input" id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="name@beispiel.de">
+      </div>
+      <div class="t-field">
+        <label class="t-label" for="f-phone">Telefon <span class="normal-case tracking-normal text-mist">(optional)</span></label>
+        <input class="t-input" id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+49 …">
+      </div>
+      <div class="t-field md:col-span-2">
+        <label class="t-label" for="f-erfahrung">Ihre Trading-Erfahrung <i>*</i></label>
+        <select class="t-select" id="f-erfahrung" name="erfahrung" required>
+          <option value="" selected disabled>Bitte wählen</option>
+          <option>Einsteiger (noch kein aktives Trading)</option>
+          <option>1–3 Jahre</option>
+          <option>3–10 Jahre</option>
+          <option>Über 10 Jahre</option>
+        </select>
+      </div>
+    </div>
+
+    <fieldset class="t-fieldset mt-7" data-multi="maerkte">
+      <legend class="t-legend">Welche Märkte handeln Sie? <span class="normal-case tracking-normal text-mist">(Mehrfachauswahl)</span></legend>
+      <div class="t-choices">
+        <label class="t-choice"><input type="checkbox" value="Indizes / Futures"><span>Indizes / Futures</span></label>
+        <label class="t-choice"><input type="checkbox" value="Devisen"><span>Devisen</span></label>
+        <label class="t-choice"><input type="checkbox" value="Aktien"><span>Aktien</span></label>
+        <label class="t-choice"><input type="checkbox" value="Rohstoffe"><span>Rohstoffe</span></label>
+        <label class="t-choice"><input type="checkbox" value="Optionen"><span>Optionen</span></label>
+        <label class="t-choice"><input type="checkbox" value="Krypto"><span>Krypto</span></label>
+      </div>
+      <input type="hidden" name="maerkte" value="">
+    </fieldset>
+
+    <fieldset class="t-fieldset mt-7" data-multi="zeitraum">
+      <legend class="t-legend">Wann würde es Ihnen passen? <span class="normal-case tracking-normal text-mist">(Mehrfachauswahl)</span></legend>
+      <div class="t-choices">
+        <label class="t-choice"><input type="checkbox" value="Frühjahr 2027"><span>Frühjahr 2027</span></label>
+        <label class="t-choice"><input type="checkbox" value="Sommer 2027"><span>Sommer 2027</span></label>
+        <label class="t-choice"><input type="checkbox" value="Herbst 2027"><span>Herbst 2027</span></label>
+        <label class="t-choice"><input type="checkbox" value="Winter 2027/28"><span>Winter 2027/28</span></label>
+        <label class="t-choice"><input type="checkbox" value="Flexibel"><span>Flexibel</span></label>
+      </div>
+      <input type="hidden" name="zeitraum" value="">
+    </fieldset>
+
+    <fieldset class="t-fieldset mt-7">
+      <legend class="t-legend">Wie konkret ist Ihr Interesse? <i>*</i></legend>
+      <div class="t-choices t-choices--stack">
+        <label class="t-choice"><input type="radio" name="teilnahme" value="Fest entschlossen, sobald der Termin passt" required><span>Ich bin dabei, sobald der Termin passt</span></label>
+        <label class="t-choice"><input type="radio" name="teilnahme" value="Sehr interessiert, abhängig von Termin und Line-up"><span>Sehr interessiert – hängt von Termin und Line-up ab</span></label>
+        <label class="t-choice"><input type="radio" name="teilnahme" value="Erst einmal informiert bleiben"><span>Ich möchte erst einmal informiert bleiben</span></label>
+      </div>
+    </fieldset>
+
+    <div class="mt-7 grid grid-cols-1 items-end gap-5 md:grid-cols-2">
+      <div class="t-field">
+        <label class="t-label" for="f-personen">Personen</label>
+        <select class="t-select" id="f-personen" name="personen">
+          <option>1 Person</option>
+          <option>2 Personen</option>
+          <option>3 oder mehr</option>
+        </select>
+      </div>
+      <div class="t-field">
+        <label class="t-label" for="f-quelle">Wie haben Sie von uns erfahren?</label>
+        <select class="t-select" id="f-quelle" name="quelle">
+          <option value="" selected>Bitte wählen</option>
+          <option>Google-Suche</option>
+          <option>YouTube</option>
+          <option>Instagram</option>
+          <option>Facebook</option>
+          <option>LinkedIn</option>
+          <option>Empfehlung</option>
+          <option>Trading-Community / Forum</option>
+          <option>Sonstiges</option>
+        </select>
+      </div>
+      <div class="t-field md:col-span-2">
+        <label class="t-label" for="f-message">Ihre Nachricht <span class="normal-case tracking-normal text-mist">(optional)</span></label>
+        <textarea class="t-textarea" id="f-message" name="message" placeholder="Was wünschen Sie sich vom Retreat? Welche Fragen haben Sie?"></textarea>
+      </div>
+    </div>
+
+    <input type="hidden" name="seite" value="">
+    <input type="hidden" name="utm_source" value="">
+    <input type="hidden" name="utm_medium" value="">
+    <input type="hidden" name="utm_campaign" value="">
+    <input type="hidden" name="utm_term" value="">
+    <input type="hidden" name="utm_content" value="">
+
+    <div class="t-consent mt-7">
+      <input type="checkbox" id="privacy_consent" name="privacy_consent" value="1" required>
+      <label for="privacy_consent">Ich habe die <a href="/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert werden und Trading am See mich per E-Mail oder Telefon zum Retreat kontaktiert. Die Einwilligung kann ich jederzeit widerrufen. <span class="text-gold">*</span></label>
+    </div>
+
+    <button type="submit" class="t-btn t-btn--gold t-btn--block mt-8 convert">Platz unverbindlich vormerken</button>
+    <p class="t-note mt-4 text-center">Keine Buchung, keine Zahlung. Sie erhalten Termine und Line-up als Erste.</p>
+  </form>
+
+  <div class="t-thanks" id="t-thanks" role="status" aria-live="polite">
+    <div class="t-thanks__icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg></div>
+    <p class="font-serif text-4xl text-white">Vielen Dank – Sie sind vorgemerkt.</p>
+    <p class="t-text mx-auto mt-4 max-w-md">Wir melden uns persönlich bei Ihnen, sobald Termine und Line-up feststehen. Bis dahin: Der See ist schon da.</p>
+  </div>
+</div>

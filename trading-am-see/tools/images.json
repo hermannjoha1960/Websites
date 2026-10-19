@@ -1,0 +1,254 @@
+[
+ {
+  "out": "hero-morgennebel-kruepelsee",
+  "src": "vh/umgebung-07-seite-lage-und-anbindung-abschnitt-morgennebel-ueber-dem-wasser-01.jpg",
+  "max": 1600,
+  "alt": "Goldener Morgennebel über dem Krüpelsee bei Sonnenaufgang",
+  "q": 78
+ },
+ {
+  "out": "hero-steg-morgennebel",
+  "src": "vh/umgebung-03-seite-lage-und-anbindung-abschnitt-steg-im-morgennebel-01.jpg",
+  "max": 1600,
+  "alt": "Steg im Morgennebel am Krüpelsee in Zernsdorf",
+  "q": 78
+ },
+ {
+  "out": "hero-steg-sonnenuntergang",
+  "src": "sb/senzig-hermann_senzig-hermann_004.jpeg",
+  "max": 1600,
+  "alt": "Langer Holzsteg in den Sonnenuntergang am See bei Königs Wusterhausen",
+  "q": 78
+ },
+ {
+  "out": "hero-schilf-sonnenuntergang",
+  "src": "sb/foto-esterno_exterior_lake_sunset_dock_reeds_original.jpeg",
+  "max": 1600,
+  "alt": "Sonnenuntergang über dem See mit Schilf und Steg im Dahme-Seenland",
+  "q": 78
+ },
+ {
+  "out": "trading-platz-seeblick",
+  "src": "vh/karl-markx-strasse_004.jpg",
+  "max": 1600,
+  "alt": "Arbeitsplatz mit großem Monitor und Laptop im Wintergarten mit Blick auf den Krüpelsee",
+  "q": 78
+ },
+ {
+  "out": "wintergarten-tafel-seeblick",
+  "src": "vh/06-seite-innenraeume-abschnitt-wintergarten-mit-esstisch-bereinigt-ohne-mop-und-eimer-02.jpg",
+  "max": 1280,
+  "alt": "Lange Holztafel im Wintergarten der Seevilla mit Blick auf Steg und See",
+  "q": 74
+ },
+ {
+  "out": "lounge-panoramafenster-see",
+  "src": "vh/05-seite-innenraeume-abschnitt-wohnzimmer-panoramafenster-zum-see-bereinigt-ohne-mop-und-eimer-02.jpg",
+  "max": 1280,
+  "alt": "Lounge mit Panoramafenster zum Krüpelsee in der Seevilla",
+  "q": 74
+ },
+ {
+  "out": "essbereich-seeblick",
+  "src": "vh/04-seite-innenraeume-abschnitt-wohnbereich-mit-seeblick-bereinigt-ohne-mop-und-eimer-02.jpg",
+  "max": 1280,
+  "alt": "Essbereich mit Seeblick in der Villa am Krüpelsee",
+  "q": 74
+ },
+ {
+  "out": "essbereich-backsteinbogen",
+  "src": "vh/07-seite-innenraeume-abschnitt-essbereich-mit-backsteinbogen-01.jpg",
+  "max": 1280,
+  "alt": "Essbereich mit Backsteinbogen und Industrieleuchten in der Seevilla",
+  "q": 74
+ },
+ {
+  "out": "kaminzimmer",
+  "src": "vh/11-seite-innenraeume-abschnitt-wohnzimmer-mit-kaminofen-01.jpg",
+  "max": 1280,
+  "alt": "Wohnzimmer mit Kachelofen und Wendeltreppe in der Seevilla",
+  "q": 74
+ },
+ {
+  "out": "luftbild-seevilla-stege",
+  "src": "vh/villa-am-kruepelsee-luftaufnahme-stege-hausboot.jpg",
+  "max": 1672,
+  "alt": "Luftaufnahme der Seevilla am Krüpelsee mit privaten Stegen und Hausboot",
+  "q": 78
+ },
+ {
+  "out": "seevilla-vom-steg",
+  "src": "vh/01-seite-startseite-abschnitt-titelbild-villa-vom-steg-01.jpg",
+  "max": 1280,
+  "alt": "Die Seevilla am Krüpelsee vom Steg aus gesehen",
+  "q": 74
+ },
+ {
+  "out": "salzwasserpool",
+  "src": "vh/02-seite-aussenbereich-abschnitt-salzwasserpool-gartenansicht-01.jpg",
+  "max": 1280,
+  "alt": "Beheizter Salzwasserpool im Garten der Seevilla",
+  "q": 74
+ },
+ {
+  "out": "sauna-innen",
+  "src": "vh/karl-markx-strasse_005.jpg",
+  "max": 1280,
+  "alt": "Saunahaus der Seevilla von innen mit Glassauna und Ruhesessel",
+  "q": 74
+ },
+ {
+  "out": "saunahaus-garten",
+  "src": "vh/karl-markx-strasse_010.png",
+  "max": 1216,
+  "alt": "Saunahaus im Garten der Seevilla",
+  "q": 74
+ },
+ {
+  "out": "seevilla-trauerweide",
+  "src": "vh/karl-markx-strasse_006.jpg",
+  "max": 1280,
+  "alt": "Seevilla mit Trauerweide und Garten am Krüpelsee",
+  "q": 74
+ },
+ {
+  "out": "terrasse-am-wasser",
+  "src": "vh/03-seite-aussenbereich-abschnitt-terrasse-am-wasser-01.jpg",
+  "max": 1280,
+  "alt": "Holzterrasse mit Blick auf Steg und Krüpelsee",
+  "q": 74
+ },
+ {
+  "out": "regenbogen-ueber-dem-see",
+  "src": "vh/karl-markx-strasse_001.jpg",
+  "max": 1280,
+  "alt": "Doppelter Regenbogen über dem Krüpelsee",
+  "q": 74
+ },
+ {
+  "out": "sonnenaufgang-vom-steg",
+  "src": "vh/karl-markx-strasse_011.png",
+  "max": 1076,
+  "alt": "Sonnenaufgang über dem spiegelglatten Krüpelsee, vom Steg aus gesehen",
+  "q": 74
+ },
+ {
+  "out": "schwaene-morgennebel",
+  "src": "vh/umgebung-04-seite-lage-und-anbindung-abschnitt-schwaene-im-morgennebel-01.jpg",
+  "max": 1280,
+  "alt": "Zwei Schwäne im Morgennebel auf dem Krüpelsee",
+  "q": 74
+ },
+ {
+  "out": "blaue-stunde-see",
+  "src": "vh/umgebung-02-seite-lage-und-anbindung-abschnitt-abenddaemmerung-am-wasser-01.jpg",
+  "max": 1280,
+  "alt": "Blaue Stunde am Krüpelsee mit Spiegelung der Uferbäume",
+  "q": 74
+ },
+ {
+  "out": "sonnenuntergang-see",
+  "src": "vh/umgebung-05-seite-lage-und-anbindung-abschnitt-sonnenuntergang-ueber-dem-see-01.jpg",
+  "max": 1280,
+  "alt": "Sonnenuntergang über dem Krüpelsee",
+  "q": 74
+ },
+ {
+  "out": "schilf-abendrot-panorama",
+  "src": "vh/umgebung-11-seite-lage-und-anbindung-abschnitt-schilf-im-abendrot-panorama-01.jpg",
+  "max": 1600,
+  "alt": "Schilf im Abendrot am Krüpelsee – Panorama",
+  "q": 78
+ },
+ {
+  "out": "winter-steg-schnee",
+  "src": "vh/umgebung-10-seite-lage-und-anbindung-abschnitt-mond-ueber-verschneitem-steg-01.jpg",
+  "max": 1280,
+  "alt": "Wintermorgen am Krüpelsee mit verschneitem Steg",
+  "q": 74
+ },
+ {
+  "out": "uferwiese-trauerweide",
+  "src": "vh/umgebung-06-seite-lage-und-anbindung-abschnitt-uferwiese-unter-der-weide-01.jpg",
+  "max": 1280,
+  "alt": "Uferwiese unter der Trauerweide mit Blick auf Stege und See",
+  "q": 74
+ },
+ {
+  "out": "lagerfeuer-am-see",
+  "src": "sb/senzig-hermann_senzig-hermann_006.jpeg",
+  "max": 1280,
+  "alt": "Lagerfeuer am Seeufer in der Abenddämmerung",
+  "q": 74
+ },
+ {
+  "out": "feuerstelle-abend",
+  "src": "sb/senzig-hermann_senzig-hermann_018.jpeg",
+  "max": 1280,
+  "alt": "Feuerstelle mit Lounge am See am Abend",
+  "q": 74
+ },
+ {
+  "out": "hausboot-sonnenuntergang",
+  "src": "sb/senzig-hermann_senzig-hermann_008.jpeg",
+  "max": 1280,
+  "alt": "Blick vom Steuerstand eines Hausboots in den Sonnenuntergang über dem See",
+  "q": 74
+ },
+ {
+  "out": "see-abendrot-kanu",
+  "src": "sb/senzig-hermann_senzig-hermann_003.jpeg",
+  "max": 1280,
+  "alt": "Feuerrotes Abendrot über dem See mit Kanu am Steg",
+  "q": 74
+ },
+ {
+  "out": "seegrundstueck-steg-abend",
+  "src": "sb/senzig-hermann_senzig-hermann_019.jpeg",
+  "max": 1280,
+  "alt": "Seegrundstück mit Steg im Abendlicht bei Senzig",
+  "q": 74
+ },
+ {
+  "out": "terrasse-seeblick-senzig",
+  "src": "sb/senzig-hermann_senzig-hermann_010.jpeg",
+  "max": 1280,
+  "alt": "Terrasse mit Blick über den Garten auf den See in Senzig",
+  "q": 74
+ },
+ {
+  "out": "kablow-steg",
+  "src": "sb/krpelsee-5-kablow_krpelsee-5-kablow_016.jpg",
+  "max": 1280,
+  "alt": "Privater Steg am Krüpelsee in Kablow",
+  "q": 74
+ },
+ {
+  "out": "kablow-wohnzimmer-seeblick",
+  "src": "sb/krpelsee-5-kablow_krpelsee-5-kablow_007.jpg",
+  "max": 1280,
+  "alt": "Wohnzimmer mit großem Fenster zum Krüpelsee in Kablow",
+  "q": 74
+ },
+ {
+  "out": "seehaus-tafel",
+  "src": "sb/seestrasse-41_seestrasse-41_010.jpg",
+  "max": 1280,
+  "alt": "Moderner Essbereich mit großer Tafel und Seeblick",
+  "q": 74
+ },
+ {
+  "out": "seehaus-garten-see",
+  "src": "sb/seestrasse-41_seestrasse-41_020.jpg",
+  "max": 1280,
+  "alt": "Garten eines Seehauses mit Blick auf den See und Bootsstege",
+  "q": 74
+ },
+ {
+  "out": "sonnenuntergang-spiegelung",
+  "src": "sb/foto-esterno_exterior_lake_sunset_panorama_original.jpeg",
+  "max": 1280,
+  "alt": "Sonnenuntergang mit Spiegelung über dem See",
+  "q": 74
+ }
+]

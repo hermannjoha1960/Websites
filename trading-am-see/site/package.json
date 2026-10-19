@@ -1,0 +1,13 @@
+{
+  "name": "trading-am-see-site",
+  "private": true,
+  "description": "Source of trading-am-see.de (Timbaly): CSS build and local preview.",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o dist/site.css --minify",
+    "build": "npm run build:css && node ../tools/build-preview.mjs",
+    "shots": "node ../tools/screenshots.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
